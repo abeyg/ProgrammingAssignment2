@@ -1,5 +1,5 @@
-## Return a matrix that is the inverse of 'x'.
-## These two functions cache and return the inverse of the input matrix x.
+## Return a matrix that is the inverse of the input matrix.
+## These two functions cache and return the inverse of the input matrix x
 ## provided the input matrix can be inversed.
 
 ## Here is an example of how to use it from the R console.
@@ -41,6 +41,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## returned by makeCacheMatrix above. If the inverse has already been 
 ## calculated (and the matrix has not changed), then the cachesolve 
 ## retrieve the inverse from the cache.
+## Otherwise, it will be computed using the solve function and updated
+## in the cache before returning the inverse.
 cacheSolve <- function(x, ...) {
         ## convert it first to a list to access it easily.
         l=as.list(x[,])
