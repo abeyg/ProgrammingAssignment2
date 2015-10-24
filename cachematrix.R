@@ -2,7 +2,7 @@
 ## These two functions cache and return the inverse of the input matrix x
 ## provided the input matrix can be inversed.
 
-## Here is an example of how to use it from the R console.
+## Here is an example of how to test it from the R console.
 ## > a<-matrix(c(1,3,2,4,3,2,5,4,3),nrow=3,ncol=3)
 ## > b<-makeCacheMatrix(a)
 ## > cacheSolve(b)
